@@ -1,0 +1,61 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background: #f8f9fa;
+  color: #243b4d;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f4c5c;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.section-subtitle {
+  color: #5f7b8a;
+}
+
+.card-img-wrap {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offcanvas-body a {
+  display: block;
+  padding: 0.75rem 0;
+  color: #0d4f63;
+  text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+  color: #085a78;
+}
+
+footer {
+  background: linear-gradient(180deg, #d4eef6 0%, #aed9e7 100%);
+  color: #163845;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: #0f4c5c;
+}
+
+.footer-icon:hover {
+  color: #083445;
+}
+
+.hero-caption {
+  backdrop-filter: blur(6px);
+}
+
+.navbar-light .navbar-toggler-icon {
+  filter: brightness(0.35);
+}

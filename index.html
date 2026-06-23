@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>千海映畫｜首頁</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light container py-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=80&q=80" alt="千海映畫 logo" class="rounded-circle me-2" style="width:52px; height:52px; object-fit:cover;">
+        <div>
+          <div class="small text-secondary">千海映畫</div>
+          <div class="fw-bold">Chihai Studio</div>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 p-0" id="hamburgerBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="漢堡選單">
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於千海</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">作品展示</a></li>
+          <li class="nav-item"><a class="nav-link" href="#service">服務案例</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">聯絡資訊</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">選單</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="關閉"></button>
+    </div>
+    <div class="offcanvas-body d-flex justify-content-center align-items-center">
+      <div class="menu-card w-100">
+        <a href="#about">關於千海</a>
+        <a href="#works">作品展示</a>
+        <a href="#service">專業服務</a>
+        <a href="#">IP 跨域開發</a>
+        <a href="#">幕後洞察</a>
+        <a href="#footer">聯絡資訊</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="container py-4 text-center">
+      <h1 class="display-6 fw-bold">千海映畫</h1>
+      <p class="text-muted">用影像留住時間的痕跡，讓故事流動到世界每個角落。</p>
+    </section>
+
+    <section class="container mb-5">
+      <div id="homepageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="幻燈片 1"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1" aria-label="幻燈片 2"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" aria-label="幻燈片 3"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="3" aria-label="幻燈片 4"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="4" aria-label="幻燈片 5"></button>
+        </div>
+        <div class="carousel-inner rounded-4 overflow-hidden shadow">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="海浪輪播圖 1">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 hero-caption">
+              <h5>千海映畫 x 影像故事</h5>
+              <p>用影像講述情感，讓每個場景都成為時間的記憶。</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="海浪輪播圖 2">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 hero-caption">
+              <h5>企業影片製作</h5>
+              <p>MV、PV、商業影片與動畫內容，專業呈現一貫品牌風格。</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="海浪輪播圖 3">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 hero-caption">
+              <h5>創意視覺表現</h5>
+              <p>從故事概念到成品，每個畫面都精心雕琢。</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="海浪輪播圖 4">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 hero-caption">
+              <h5>品牌形象傳播</h5>
+              <p>讓影像成為品牌與觀眾之間最真摯的橋樑。</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="海浪輪播圖 5">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3 hero-caption">
+              <h5>海浪般的故事流動</h5>
+              <p>我們相信，每道海浪都藏著一個等待被看見的故事。</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">上一張</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">下一張</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="大海映畫" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title">關於千海映畫</h2>
+          <p class="section-subtitle">每一道海浪，都藏著一個等待被看見的故事。</p>
+          <p>有人說，海浪會帶走時間留下的痕跡，而我們相信，故事能留下一種時間帶不走的感動。千海映畫誕生於對動畫與影像創作的熱愛，我們透過動畫電影、動畫影集、MV、PV 與商業影像，描繪人與人之間的羈絆、夢想與成長。</p>
+          <p>如同海浪跨越海岸，故事也能跨越語言與文化，將情感傳遞到世界每個角落。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="section-title">服務案例</h2>
+        <p class="section-subtitle">精選八項作品展示，展現專業影像製作實力。</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4" id="works">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="大成電視 CM [機車] 篇">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">大成電視 CM [機車] 篇</h5>
+              <p class="text-muted small">廣告</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="品牌形象影片">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">品牌形象影片</h5>
+              <p class="text-muted small">公司簡介</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="MV 創作專案">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MV 創作專案</h5>
+              <p class="text-muted small">音樂作品</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="PV 影片企劃">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">PV 影片企劃</h5>
+              <p class="text-muted small">品牌推廣</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="動畫短片">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">動畫短片</h5>
+              <p class="text-muted small">故事敘事</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="商業拍攝案">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">商業拍攝案</h5>
+              <p class="text-muted small">產品展示</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="活動紀錄影片">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">活動紀錄影片</h5>
+              <p class="text-muted small">品牌活動</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="跨域 IP 開發">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">跨域 IP 開發</h5>
+              <p class="text-muted small">故事與角色</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <div class="row gy-4 text-center text-md-start">
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=100&q=80" alt="千海映畫 logo" class="mb-3" style="max-width:110px;">
+          <p class="mb-0">千海映畫 Chihai Studio</p>
+          <p class="text-muted small mb-0">Animation & Film Production</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">聯絡資訊</h5>
+          <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>0907-518-380</p>
+          <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>ChihaiStudio@gmail.com</p>
+          <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>台北市大安區忠孝東路四段169號4F之1</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">社群連結</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3">
+            <a href="https://facebook.com" target="_blank" class="footer-icon"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" class="footer-icon"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="footer-icon"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <div class="text-center text-muted small">© 2026 千海映畫 Chihai Studio。版權所有，並保留一切權利。</div>
+    </div>
+  </footer>
+  <!-- 回到頂端按鈕 -->
+  <button id="backToTop" class="back-to-top" aria-label="回到頂端">
+    <i class="bi bi-arrow-up-short" style="font-size:1.6rem"></i>
+  </button>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 回到頂端行為
+    (function(){
+      const btn = document.getElementById('backToTop');
+      function toggle() {
+        if (window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
+      }
+      btn.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      window.addEventListener('scroll', toggle);
+      // 初次檢查
+      toggle();
+    })();
+  </script>
+</body>
+</html>
