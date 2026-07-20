@@ -99,6 +99,30 @@ footer {
   backdrop-filter: blur(6px);
 }
 
+/* 預訂完成頁：讓訊息固定在主視覺正中央，手機版也清楚顯示 */
+.goal-carousel .carousel-item img {
+  height: clamp(260px, 38vh, 340px);
+  object-fit: cover;
+}
+
+.goal-message {
+  display: block;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  width: min(90%, 560px);
+  margin: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.goal-message h5 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
 .navbar-light .navbar-toggler-icon {
   filter: brightness(0.35);
 }

@@ -118,13 +118,22 @@ python -m http.server 8000
 
 ## 9. GA4「加入購物車」事件
 
-「大成電視 CM [機車] 篇」卡片內設有「加入購物車」按鈕。使用者點擊後，網站會透過 `gtag` 傳送 GA4 建議事件 `add_to_cart`。
+「大成電視 CM [機車] 篇」卡片內設有「加入購物車」按鈕。使用者點擊後，網站會透過 `gtag` 傳送 GA4 建議事件 `add_to_cart`，接著跳轉至 `goal.html`。若 GA4 未載入或 callback 未執行，逾時備援仍會完成跳轉。
 
 - 按鈕與事件程式：`index.html`
 - 按鈕樣式：`css/style.css` 的 `.btnstyle`
 - 商品編號：`product_001`
 - 商品名稱：`大成電視 CM [機車] 篇`
 - 幣別與金額：`TWD 100`
+
+## 10. 預訂完成頁
+
+`goal.html` 是加入購物車後的完成頁，主要訊息為「感謝您，完成預訂購買。」。
+
+- 完成訊息使用 `.goal-message` 水平、垂直置中，手機版也會顯示。
+- 主視覺圖片使用 `.goal-carousel`，高度會依螢幕在 `260px` 至 `340px` 間調整。
+- 左上角 Logo 與品牌名稱可點擊返回 `index.html`。
+- 頁面樣式集中在 `css/style.css`，不要在 `goal.html` 內重複加入樣式。
 
 ## github
 https://github.com/ChocoFantasy

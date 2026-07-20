@@ -293,11 +293,24 @@
       if (!addToCartButton) return;
 
       addToCartButton.addEventListener('click', function(){
-        if (typeof gtag !== 'function') return;
+        let hasRedirected = false;
+
+        function redirectToGoal(){
+          if (hasRedirected) return;
+          hasRedirected = true;
+          window.location.href = 'goal.html';
+        }
+
+        if (typeof gtag !== 'function') {
+          redirectToGoal();
+          return;
+        }
 
         gtag('event', 'add_to_cart', {
           currency: 'TWD',
           value: 100,
+          event_callback: redirectToGoal,
+          event_timeout: 1000,
           items: [
             {
               item_id: 'product_001',
@@ -308,6 +321,9 @@
             }
           ]
         });
+
+        // 即使 GA4 未觸發 callback，也要讓使用者進入完成頁。
+        window.setTimeout(redirectToGoal, 1200);
       });
     })();
   </script>
