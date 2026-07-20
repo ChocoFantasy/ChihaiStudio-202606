@@ -29,6 +29,28 @@ body {
   object-fit: cover;
 }
 
+.btnstyle {
+  color: #fff;
+  background-color: #007bff;
+  font-size: 1.125rem;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  line-height: 1.5;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btnstyle:hover {
+  background-color: #00438a;
+  border-color: #00438a;
+}
+
+.btnstyle:focus-visible {
+  outline: 3px solid rgba(0, 123, 255, 0.35);
+  outline-offset: 3px;
+}
+
 .offcanvas-body a {
   display: block;
   padding: 0.75rem 0;

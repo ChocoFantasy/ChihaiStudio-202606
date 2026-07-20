@@ -115,3 +115,21 @@ python -m http.server 8000
 - `bootstrap-icons` 目前仍使用 CDN 連結；若希望離線維護，可新增本地 icon 檔案並改成本地引用。
 - 若要新增其他頁面，可複製 `index.html` 並修改內部連結。
 - 若要把輪播改為本地圖片，請同步更新 `images` 內檔名與 `index.html`。
+
+## 9. GA4「加入購物車」事件
+
+「大成電視 CM [機車] 篇」卡片內設有「加入購物車」按鈕。使用者點擊後，網站會透過 `gtag` 傳送 GA4 建議事件 `add_to_cart`。
+
+- 按鈕與事件程式：`index.html`
+- 按鈕樣式：`css/style.css` 的 `.btnstyle`
+- 商品編號：`product_001`
+- 商品名稱：`大成電視 CM [機車] 篇`
+- 幣別與金額：`TWD 100`
+
+## github
+https://github.com/ChocoFantasy
+## SSH
+git@github.com:ChocoFantasy/ChihaiStudio-202606.git
+
+## 對外公開網址
+https://chocofantasy.github.io/ChihaiStudio-202606/

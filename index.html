@@ -155,6 +155,7 @@
             <div class="card-body">
               <h5 class="card-title">大成電視 CM [機車] 篇</h5>
               <p class="text-muted small">廣告</p>
+              <button type="button" class="btnstyle" id="addToCartButton">加入購物車</button>
             </div>
           </div>
         </div>
@@ -283,6 +284,31 @@
       window.addEventListener('scroll', toggle);
       // 初次檢查
       toggle();
+    })();
+
+    // 將「加入購物車」點擊行為傳送至 GA4。
+    (function(){
+      const addToCartButton = document.getElementById('addToCartButton');
+
+      if (!addToCartButton) return;
+
+      addToCartButton.addEventListener('click', function(){
+        if (typeof gtag !== 'function') return;
+
+        gtag('event', 'add_to_cart', {
+          currency: 'TWD',
+          value: 100,
+          items: [
+            {
+              item_id: 'product_001',
+              item_name: '大成電視 CM [機車] 篇',
+              item_category: '廣告',
+              price: 100,
+              quantity: 1
+            }
+          ]
+        });
+      });
     })();
   </script>
 </body>
